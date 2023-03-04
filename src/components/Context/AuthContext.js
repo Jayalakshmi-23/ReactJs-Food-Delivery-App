@@ -9,6 +9,7 @@ const AuthContext = React.createContext({
     addToCart:undefined,
     cardDispatch:undefined,
     clearCart:[],
+    fetchData:undefined,
 });
 
 export const AuthContextProvider = function(props){
@@ -63,7 +64,7 @@ export const AuthContextProvider = function(props){
   
   
    
-    return <AuthContext.Provider value={{totalItems: [...foodItems],showCartSlide:ShowCartSide, showCart:showCart, cart:getCartItems, addToCart:addToCart, clearCart:clearCart}}>
+    return <AuthContext.Provider value={{totalItems: [...foodItems],fetchData:fetchData,showCartSlide:ShowCartSide, showCart:showCart, cart:getCartItems, addToCart:addToCart, clearCart:clearCart}}>
             {props.children}
     </AuthContext.Provider>
 }

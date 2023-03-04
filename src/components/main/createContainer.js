@@ -33,16 +33,7 @@ const CreateContainer = (props) => {
   const [aletStatus, setAletStatus] = useState("danger");
   const [msg, setMsg] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
-  // const [foodItems, setFoodItems] = useState([]);
 
-  // const fetchData = async function(){
-  //   const data = await getAllItems();
-  //   setFoodItems(data);
-  // }
-
-  // useEffect(()=>{
-  //   fetchData();
-  // },[])
 
 
   const inputHandler = function (e) {
@@ -151,8 +142,7 @@ const CreateContainer = (props) => {
         }, 4000);
 
       }
-      
-      props.fetchData();
+      context.fetchData();
 
     } catch (error) {
       console.log(error);
