@@ -1,0 +1,20 @@
+/* .mySwiper .swiper-wrapper{
+    width: 95%;
+    margin:0 auto;
+    overflow-x: hidden;
+} */
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled{
+    background-color: orange;
+    border-radius: 10px;
+    padding:0.5rem 1rem;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after{
+    font-size:0.7rem !important;
+    color:#fff;
+}
+.swiper-button-next, .swiper-button-prev{
+    background-color: orange;
+    border-radius: 10px;
+    padding:0.5rem 1rem;
+}
