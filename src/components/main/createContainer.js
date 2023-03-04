@@ -142,7 +142,7 @@ const CreateContainer = (props) => {
         }, 4000);
 
       }
-      context.fetchData();
+      props.fetchData();
 
     } catch (error) {
       console.log(error);
